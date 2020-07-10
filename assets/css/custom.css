@@ -1,0 +1,229 @@
+/* Section headings: Center text, Adjust paddings */
+.title {
+  text-align: center;
+}
+.sectionHead1 {
+  float:left;
+  padding-top: 1px;
+}
+/*************/
+
+/* Animated subtitle in landing page */
+.ml1 {
+  font-weight: 500;
+  font-size: 1.5em;
+}
+.ml1 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+.ml1 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+.ml1 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  transform-origin: 0 0;
+}
+.ml1 .line1 { top: 0; }
+.ml1 .line2 { bottom: 0; }
+/*************/
+
+/* Adjust font size for icons */
+.contact {
+  font-size:24px;
+  vertical-align:middle;
+}
+/*************/
+
+/* Scroll button icon settings */
+.ct-btn-scroll {
+  position: relative;
+  bottom: 30px;
+  margin: auto;
+  padding-top: 500px;
+  z-index: 9;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+/*************/
+
+/* Projects Card hover effects */
+.grid {
+  position: relative;
+  margin: 0;
+  padding: 1em 0 4em;
+  max-width: 1000px;
+  list-style: none;
+  text-align: center;
+}
+.grid figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 320px;
+  max-width: 480px;
+  max-height: 360px;
+  width: 48%;
+  background: #3085a3; /*Color for image background*/
+  text-align: center;
+  cursor: pointer;
+}
+.grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8; /*Intensity for background color*/
+}
+.grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  /*font-size: 1.25em;*/
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none;
+}
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+.grid figure h2 {
+  /*word-spacing: -0.15em;*/
+  font-weight: 300;
+  font-size: 200%;
+}
+.grid figure h2 span {
+  font-weight: 800;
+}
+.grid figure h2,
+.grid figure p {
+  margin: 0;
+}
+.grid figure p {
+  letter-spacing: 1px;
+  font-size: 95%;
+}
+/*************/
+
+/* Marley effects */
+figure.effect-marley figcaption {
+  text-align: right;
+}
+figure.effect-marley:hover img {
+  opacity: 0.25;
+}
+figure.effect-marley h2,
+figure.effect-marley p {
+  position: absolute;
+  right: 30px;
+  left: 30px;
+  padding: 10px 0;
+}
+figure.effect-marley p {
+  bottom: 30px;
+  line-height: 1.5;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+figure.effect-marley h2 {
+  top: 30px;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0,20px,0);
+  transform: translate3d(0,20px,0);
+}
+figure.effect-marley:hover h2 {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+figure.effect-marley h2::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #fff;
+  content: '';
+  -webkit-transform: translate3d(0,40px,0);
+  transform: translate3d(0,40px,0);
+}
+figure.effect-marley h2::after,
+figure.effect-marley p {
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+figure.effect-marley:hover h2::after,
+figure.effect-marley:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+/*************/
+
+/*Timeline*/
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #e67663;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > h6 {
+    margin: 200px 0;
+    padding-left: 20px;
+    font-size: 250%; 
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #f5593d;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+/*************/
+
