@@ -1,4 +1,4 @@
-# rtaujale
+# rtaujale.io
 
 This repository holds the source code for my personal website. It includes a copy of my CV, some artwork and photographs that I have taken, among other things.
 
